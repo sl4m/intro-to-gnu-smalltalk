@@ -1,8 +1,34 @@
+!SLIDE smaller
+
+# Class Example
+
+        Object subclass: Person [
+            | name age |
+            Person class >> name: aString age: anInteger [
+                ^self new name: aString; age: anInteger; yourself
+            ]
+
+            name [ ^name ]
+            name: aString [ name := aString ]
+            age [ ^age ]
+            age: anInteger [ age := anInteger ]
+
+            printOn: aStream [
+                aStream << ('%1 (%2)' % {name. age})
+            ]
+        ]
+
+!SLIDE smbullets
+
+## To create a Person object
+
+* `|billy|`
+* `billy := Person name: 'Charley' age: 12  "# => returns Charley (12)"`
+
 !SLIDE small
 
 # Recursion Example
 
-        @@@ smalltalk
         factorial
             "Answer the factorial of the receiver."
 
