@@ -38,6 +38,16 @@
 
 !SLIDE title-slide
 
+# String Concatenation
+
+## `ruby`
+        "Hello " + "world!"  # => "Hello world!"
+
+## `smalltalk`
+        "Hello ", "world!"   "# => 'Hello world!'"
+
+!SLIDE title-slide
+
 # Symbols
 
 ## `ruby`
@@ -104,7 +114,7 @@
         ~=  "# inequality comparison"
         ~~  "# not identical comparison"
 
-!SLIDE title-slide
+!SLIDE small title-slide
 
 # Blocks
 
@@ -113,6 +123,7 @@
         block value.  "# => I'm a block!"
 
 ### Common keyword messages with block arguments:
+        conform:     "all elements meet condition"
         collect:
         select:
         reject:
@@ -143,6 +154,29 @@
         switch at: $C put: [Transcript show: 'Case C'; cr].
 
         result := (switch at: $B) value.  "# => Case B"
+
+!SLIDE small title-slide
+
+# List of methods for a class
+
+## `ruby`
+        Object.methods     # array of methods
+
+## `smalltalk`
+        Object selectors.  "# Set of methods"
+
+!SLIDE small title-slide
+
+# Other cool messages inherited from Object
+
+## `smalltalk`
+Object name.
+Object kindOfSubclass.
+Object allInstances.
+Object superclass.
+Object allSuperclasses.
+Object subclasses.
+Object allSubclasses.
 
 !SLIDE smaller title-slide
 
@@ -191,3 +225,5 @@
         inspect
         explore
         halt
+        notify:
+        error:
