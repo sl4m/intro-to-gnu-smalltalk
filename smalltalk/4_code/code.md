@@ -170,13 +170,13 @@
 # Other cool messages inherited from Object
 
 ## `smalltalk`
-Object name.
-Object kindOfSubclass.
-Object allInstances.
-Object superclass.
-Object allSuperclasses.
-Object subclasses.
-Object allSubclasses.
+        Object name.
+        Object kindOfSubclass.
+        Object allInstances.
+        Object superclass.
+        Object allSuperclasses.
+        Object subclasses.
+        Object allSubclasses.
 
 !SLIDE smaller title-slide
 
