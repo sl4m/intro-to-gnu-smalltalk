@@ -1,3 +1,13 @@
+!SLIDE bullets
+
+# Meaning of Binary Messages are not "hard\-wired"
+
+* `#ruby`
+* `3 + 4 * 5  # => 23`
+
+* `"smalltalk"`
+* `3 + 4 * 5  "# => 35"`
+
 !SLIDE smaller
 
 # Class Example

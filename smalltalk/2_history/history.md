@@ -12,8 +12,8 @@
 .notes Smalltalk\-80 Version 2 is the current stable release
 .notes Smalltalk as a word by itself usually means Smalltalk\-80
 
-* Development began in 1969
-* General availability in 1983 as Smalltalk\-80 Version 2
+* Smalltalk development began in 1969
+* General availability in 1983 as `Smalltalk-80 Version 2`
 
 !SLIDE smbullets transition=fade
 

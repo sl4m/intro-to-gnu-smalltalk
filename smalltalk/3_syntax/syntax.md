@@ -1,9 +1,9 @@
 !SLIDE smbullets incremental
 
-# Smalltalk is...
+# What is Smalltalk?
 
 * dynamic, reflective, OOP
-* supports message passing
+* supports message passing (inspired by Simula)
 
 !SLIDE bullets
 
