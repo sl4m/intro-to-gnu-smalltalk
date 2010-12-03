@@ -13,7 +13,7 @@
 * `"# smalltalk"`
 * `""`
 
-!SLIDE bullets
+!SLIDE smbullets
 
 # Characters are not Strings
 
@@ -62,7 +62,7 @@
 * `~=  "# !="`
 * `^  "# return"`
 * `&  "# AND"`
-* `|  "# OR"
+* `|  "# OR"`
 
 !SLIDE bullets
 
