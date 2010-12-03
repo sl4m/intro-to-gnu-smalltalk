@@ -2,118 +2,153 @@
 
 # Code Examples!
 
-!SLIDE bullets
+!SLIDE title-slide
 
 # Comments
 
-* `# ruby`
-* `#`
-* `begin=; end=`
+## `ruby`
+        #
+        begin=; end=
 
-* `"# smalltalk"`
-* `""`
+## `smalltalk`
+        ""
 
-!SLIDE smbullets
+!SLIDE title-slide
 
 # Characters are not Strings
 
-* `# ruby`
-* `'a'.class  # => String`
+## `ruby`
+        'a'.class  # => String
 
-* `"# smalltalk"`
-* `'a' class  "# => String"`
-* `$a class  "# => Character"`
+## `smalltalk`
+        'a' class  "# => String"
+        $a class   "# => Character"
 
-!SLIDE bullets
+!SLIDE title-slide
 
 # Quote Escaping in Strings
 
-* `# ruby`
-* `'Hello "world"'`
-* `"Hello 'world'"`
-* `"Hello \"world\""`
+## `ruby`
+        'hello "world"'
+        "hello 'world'"
+        "hello \"world\""
 
-* `"# smalltalk"`
-* `'Hello ''world'''`
+## `smalltalk`
+        'Hello ''world'''
 
-!SLIDE bullets
+!SLIDE title-slide
 
 # Symbols
 
-* `# ruby`
-* `:foo_bar`
+## `ruby`
+        :foo_bar
 
-* `"# smalltalk"`
-* `#fooBar`
+## `smalltalk`
+        #fooBar
 
-!SLIDE bullets
+!SLIDE title-slide
 
 # Arrays
 
-* `# ruby`
-* `[0, 1, 2]`
+## `ruby`
+        [0, 1, 2]
 
-* `"# smalltalk"`
-* `#(0 1 2)  "# literal array"`
-* `{0 . 1 . 2} "# dynamic array"`
+## `smalltalk`
+        #(0 1 2)             "# literal array"
+        {0. 1. 2}            "# dynamic array"
+        #(0 1 2) = {0. 1. 2} "# => true"
 
-!SLIDE bullets
+!SLIDE title-slide
 
-* `~=  "# !="`
-* `^  "# return"`
-* `&  "# AND"`
-* `|  "# OR"`
+# Meaning of Binary Messages are not "hard\-wired"
+# They are all treated the same
 
-!SLIDE bullets
+## `ruby`
+        3 + 4 * 5  # => 23
 
-## Meaning of Binary Messages are not "hard\-wired"
-## They are all treated the same
+## `smalltalk`
+        3 + 4 * 5  "# => 35"
 
-* `# ruby`
-* `3 + 4 * 5  # => 23`
-
-* `"# smalltalk"`
-* `3 + 4 * 5  "# => 35"`
-
-!SLIDE bullets
+!SLIDE small title-slide
 
 # Cascade uses semi\-colons
 
-* `# ruby`
-* `a = 1; b = 2`
+## `ruby`
+        a = 1; b = 2
 
-* `"# smalltalk"`
-* `game := Game new board: newBoard; ui: newUi; playerX: newPlayerX; playerO: newPlayerO.`
-* use `.` to terminate statements
+## `smalltalk`
+        game := Game new 
+                     board: newBoard;
+                     ui: newUi;
+                     playerX: newPlayerX;
+                     playerO: newPlayerO.
 
-!SLIDE small
+# use `.` to terminate statements
+
+!SLIDE small title-slide
 
 # Booleans receive messages
 
+## `smalltalk`
         (1 + 1 = 2)
           ifTrue: [Transcript show: 'AWESOME']
           ifFalse: [Transcript show: 'NOT SO AWESOME'].
 
-!SLIDE small
+!SLIDE title-slide
 
 # Comparison syntax
 
-        =  "# equality comparison"
+## `smalltalk`
+        =   "# equality comparison"
         ==  "# identity comparison"
+        ~=  "# inequality comparison"
+        ~~  "# not identical comparison"
 
-!SLIDE small
+!SLIDE title-slide
 
 # Blocks
 
-      block := [Transcript show: 'I''m a block!'].
-      block value.  "# => I'm a block!"
+## `smalltalk`
+        block := [Transcript show: 'I''m a block!'].
+        block value.  "# => I'm a block!"
 
-### Common messages include: `collect:`, `select:`, `reject:`, `detect`, `inject:into:`
+### Common keyword messages with block arguments:
+        collect:
+        select:
+        reject:
+        detect:
+        inject:into:
 
-!SLIDE smaller
+!SLIDE small title-slide
+
+# Blocks receive other messages
+
+## `smalltalk`
+        | flag |
+
+        flag := true.
+        [flag] whileTrue: [ flag := false. ].
+
+        flag := false.
+        [flag] whileFalse: [ flag := true. ].
+
+!SLIDE small title-slide
+
+# Switch Functionality
+
+## `smalltalk`
+        switch := Dictionary new.
+        switch at: $A put: [Transcript show: 'Case A'; cr].
+        switch at: $B put: [Transcript show: 'Case B'; cr].
+        switch at: $C put: [Transcript show: 'Case C'; cr].
+
+        result := (switch at: $B) value.  "# => Case B"
+
+!SLIDE smaller title-slide
 
 # Class Example
 
+## `smalltalk`
         Object subclass: Person [
             | name age |
             Person class >> name: aString age: anInteger [
@@ -130,23 +165,29 @@
             ]
         ]
 
-!SLIDE small
+!SLIDE title-slide
 
+## `smalltalk`
         | name age |  "# declares variables"
 
-## Type of variable depends where variables are declared 
+### *Type of variable depends where variables are declared*
 
-!SLIDE smbullets
+!SLIDE small title-slide
 
-## To create a Person object
+# To create a Person object
 
-* `|billy|`
-* `billy := Person name: 'Charley' age: 12  "# => returns Charley (12)"`
+## `smalltalk`
+        |billy|
+        billy := Person name: 'Charley' age: 12.
+        
+        "# => 'Charley (12)''"
 
-!SLIDE smbullets
+!SLIDE title-slide
 
 # Debugging
 
-* respondsTo
-* inspect
-* explore
+## `smalltalk`
+        respondsTo:
+        inspect
+        explore
+        halt

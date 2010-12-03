@@ -28,13 +28,14 @@
 * messages with arguments (non\-alphabetic message)
 * `1+2  "# => 3"`
 
-!SLIDE smbullets incremental
+!SLIDE bullets incremental
 
 # Keyword
 
 * messages with one or more arguments
+* always ends in ':'
 * `3 between: 1 and: 5  "# => true"`
-* selector is `at:put:` for the message
+* the selector is `at:put:` for the message above
 
 !SLIDE bullets
 
