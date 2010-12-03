@@ -61,6 +61,8 @@
 
 * `~=  "# !="`
 * `^  "# return"`
+* `&  "# AND"`
+* `|  "# OR"
 
 !SLIDE bullets
 
@@ -106,6 +108,8 @@
       block := [Transcript show: 'I''m a block!'].
       block value.  "# => I'm a block!"
 
+### Common messages include: `collect:`, `select:`, `reject:`, `detect`, `inject:into:`
+
 !SLIDE smaller
 
 # Class Example
@@ -138,3 +142,11 @@
 
 * `|billy|`
 * `billy := Person name: 'Charley' age: 12  "# => returns Charley (12)"`
+
+!SLIDE smbullets
+
+# Debugging
+
+* respondsTo
+* inspect
+* explore
