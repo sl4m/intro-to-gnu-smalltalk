@@ -5,7 +5,7 @@
 * dynamic, reflective, OOP
 * supports message passing (inspired by Simula)
 
-!SLIDE bullets
+!SLIDE bullets incremental
 
 # Three Types of Messages
 ### In order of precedence
@@ -33,11 +33,11 @@
 * whileTrue/whileFalse
 * isNil
 
-!SLIDE bullets incremental
+!SLIDE bullets incremental small
 
 # Binary
 
-* messages with arguments
+* messages with arguments (non\-alphabetic message)
 * `1+2  "# => 3"`
 
 !SLIDE smbullets incremental
@@ -46,7 +46,7 @@
 
 * messages with one or more arguments
 * `array at: 1 put: 'Hello!'.  "# => array := #('Hello!')"`
-* `at:put:` message
+* selector is `at:put:` for the message
 
 !SLIDE bullets
 

@@ -1,8 +1,63 @@
 !SLIDE bullets
 
-# Meaning of Binary Messages are not "hard\-wired"
+# Comments
 
-* `#ruby`
+* `# ruby`
+* `#`
+
+* `"smalltalk"`
+* `""`
+
+!SLIDE bullets
+
+# Characters are not Strings
+
+* `# ruby`
+* `'a'.class  # => String`
+
+* `"smalltalk"`
+* `'a' class  "# => String"`
+* `$a class  "# => Character"`
+
+!SLIDE bullets
+
+# Quote Escaping in Strings
+
+* `# ruby`
+* `'Hello "world"'`
+* `"Hello 'world'"`
+* `"Hello \"world\""`
+
+* `"smalltalk"`
+* `'Hello ''world'''`
+
+!SLIDE bullets
+
+# Symbols
+
+* `# ruby`
+* `:foo_bar`
+
+* `"smalltalk"`
+* `#fooBar`
+
+!SLIDE bullets
+
+# Arrays
+
+* `# ruby`
+* `[0, 1, 2]`
+
+* `"smalltalk"`
+* `#(0 1 2)`
+* `{0 . 1 . 2}`
+
+!SLIDE bullets
+
+## Meaning of Binary Messages are not "hard\-wired"
+## They are all treated the same
+
+* `# ruby`
 * `3 + 4 * 5  # => 23`
 
 * `"smalltalk"`
