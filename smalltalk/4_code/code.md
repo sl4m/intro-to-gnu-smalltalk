@@ -104,6 +104,8 @@
           ifTrue: [Transcript show: 'AWESOME']
           ifFalse: [Transcript show: 'NOT SO AWESOME'].
 
+        "ifTrue:ifFalse: selector is not ifFalse:ifTrue:"
+
 !SLIDE title-slide
 
 # Comparison syntax
