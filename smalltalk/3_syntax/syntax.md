@@ -21,18 +21,6 @@
 * messages without arguments
 * `'Hello World!' size.  "# => 12"`
 
-!SLIDE smbullets
-
-# Common Unary Messages
-
-* subclass
-* class
-* new
-* do
-* ifTrue/ifFalse
-* whileTrue/whileFalse
-* isNil
-
 !SLIDE bullets incremental small
 
 # Binary
@@ -45,7 +33,7 @@
 # Keyword
 
 * messages with one or more arguments
-* `array at: 1 put: 'Hello!'.  "# => array := #('Hello!')"`
+* `3 between: 1 and: 5  "# => true"`
 * selector is `at:put:` for the message
 
 !SLIDE bullets
