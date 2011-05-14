@@ -1,11 +1,16 @@
 !SLIDE
 
-# Smalltalk\-80
-### `Smalltalk influenced: Ruby "# => true"`
+# Introduction to GNU Smalltalk
+
+!SLIDE
+
+## twitter: @skim
+## http://speakerrate.com/skim
 
 !SLIDE bullets incremental
 
 # Agenda
 
-* Brief History
-* Smalltalk vs. Ruby
+* History
+* What is GNU Smalltalk?
+* Hands-on
