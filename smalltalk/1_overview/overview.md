@@ -1,4 +1,4 @@
-!SLIDE
+!SLIDE center
 
 # Introduction to GNU Smalltalk
 
@@ -6,6 +6,7 @@
 
 ## twitter: @skim
 ## http://speakerrate.com/skim
+## http://chicagocodecamp.com/sessions/114
 
 !SLIDE bullets incremental
 

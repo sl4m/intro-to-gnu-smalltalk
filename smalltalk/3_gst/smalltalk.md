@@ -58,7 +58,7 @@
 ### Somewhat recently, GNU Smalltalk started moving towards a traditional Smalltalk feel
 
 * gst-blox - GUI building block tool kit
-* gst-browser - class browser
+* gst-browser - class hierarchy browser
 * [VisualGST](http://visualgst.bioskop.fr/) - an IDE for GNU Smalltalk
 
 !SLIDE bullets
