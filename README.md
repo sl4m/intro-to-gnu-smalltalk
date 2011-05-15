@@ -1,1 +1,1 @@
-## Introduction to Smalltalk
+## Introduction to GNU Smalltalk
