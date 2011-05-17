@@ -70,7 +70,7 @@
 
 !SLIDE smbullets incremental transition=fade
 
-### Possible reasons
+### In no particular order
 
 * Java was taking over the world
 * VM concept too futuristic in its day and had substantial memory needs
