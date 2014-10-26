@@ -1,7 +1,3 @@
-source :rubygems
+source 'https://rubygems.org/'
 
-gem 'bluecloth'
-gem 'nokogiri'
-gem 'showoff', :git => 'https://github.com/schacon/showoff.git'
-gem 'gli'
-gem 'heroku'
+gem 'showoff',  '0.9.9.1'

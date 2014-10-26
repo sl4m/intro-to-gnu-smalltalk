@@ -1,3 +1,7 @@
-[
-  {"section":"smalltalk"}
-]
+{
+  "name" : "Intro to GNU Smalltalk",
+  "author" : "skim",
+  "sections" : [
+    {"section" : "smalltalk"}
+  ]
+}
