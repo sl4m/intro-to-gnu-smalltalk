@@ -1,4 +1,4 @@
 source 'https://rubygems.org/'
-ruby '2.1.3'
+ruby '2.6.5'
 
-gem 'showoff',  '0.9.9.1'
+gem 'showoff',  '0.20.1'
